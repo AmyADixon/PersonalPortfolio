@@ -8,7 +8,7 @@ namespace PersonalPortfolio.Controllers {
     public class IllustrationDesignController : Controller {
         // GET: IllustrationDesign
         public ActionResult Index() {
-            return View();
+            return PartialView();
         }
     }
 }

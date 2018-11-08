@@ -6,16 +6,16 @@ using System.Web.Mvc;
 
 namespace PersonalPortfolio.Controllers {
     public class HomeController : Controller {
-        public ActionResult Index() {
+        public ActionResult Index() { // Always a full view, info will instead be injected into it
             return View();
         }
 
         public ActionResult About() {
-            return View();
+            return PartialView();
         }
 
         public ActionResult Contact() {
-            return View();
+            return PartialView();
         }
     }
 }

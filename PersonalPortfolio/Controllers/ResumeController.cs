@@ -8,7 +8,7 @@ namespace PersonalPortfolio.Controllers {
     public class ResumeController : Controller {
         // GET: Resume
         public ActionResult Index() {
-            return View();
+            return PartialView();
         }
     }
 }

@@ -5,3 +5,15 @@
 .nav-link:hover {
     color: #8ebef2 !important;
 }
+
+/* Using just to visualize the space */
+#MainInfoDisplayBox {
+    border-color: red;
+    border-style:solid;
+    border-width: .3em;
+    width: 45em;
+    height: 40em;
+    position:fixed;
+    bottom: 8em;
+    left: 4em;
+}
