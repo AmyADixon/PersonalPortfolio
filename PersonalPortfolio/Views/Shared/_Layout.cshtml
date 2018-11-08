@@ -6,6 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     @Styles.Render("~/Content/css")
+    @Styles.Render("~/CustomCSS/BootstrapOverride.css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
 
@@ -37,7 +38,6 @@
     </nav>
     <div class="container body-content">
         @RenderBody()
-        <hr />
         <footer>
             <p>&copy; @DateTime.Now.Year - Amysha Dixon</p>
         </footer>

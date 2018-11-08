@@ -1,0 +1,7 @@
+﻿.navbar-expand-lg {
+    background-color: transparent !important; /* Overrides light gray background behind links */
+}
+
+.nav-link:hover {
+    color: #8ebef2 !important;
+}
