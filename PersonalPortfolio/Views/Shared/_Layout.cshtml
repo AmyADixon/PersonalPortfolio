@@ -41,7 +41,12 @@
         </audio>
     </nav>
     <div class="container body-content">
-        @RenderBody()
+
+        <!-- This div will be populated by each return partial view from every controller-->
+        <div id="MainInfoDisplayBox">
+            @RenderBody()
+        </div>
+
         <footer>
             <p>&copy; @DateTime.Now.Year - Amysha Dixon</p>
         </footer>
