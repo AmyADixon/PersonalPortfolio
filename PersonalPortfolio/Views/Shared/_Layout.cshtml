@@ -18,7 +18,7 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
+                <li class="nav-item">
                     @Ajax.ActionLink("Home", "Main", "Home", null, new AjaxOptions {UpdateTargetId = "Output",
                                                                                                                                  InsertionMode = InsertionMode.Replace,
                                                                                                                                  HttpMethod = "GET"},
@@ -61,10 +61,6 @@
         <div id="Output">
             @RenderBody()
         </div>
-
-        <footer>
-            <p>&copy; @DateTime.Now.Year - Amysha Dixon</p>
-        </footer>
     </div>
 
     @Scripts.Render("~/bundles/jquery")
