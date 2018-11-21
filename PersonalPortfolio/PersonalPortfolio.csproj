@@ -245,6 +245,7 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\IllustrationDesign\Index.cshtml" />
     <Content Include="Views\Resume\Index.cshtml" />
+    <Content Include="Views\Home\Main.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
