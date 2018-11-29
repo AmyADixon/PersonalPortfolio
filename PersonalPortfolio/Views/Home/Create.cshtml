@@ -33,7 +33,7 @@
 }
 
     <div>
-        @Ajax.ActionLink("Nevermind", "Contact", "Home", null, new AjaxOptions {UpdateTargetId = "commentOutput",
+        @Ajax.ActionLink("Nevermind", "Contact", "Home", null, new AjaxOptions {UpdateTargetId = "CommentOutput",
                                                                                                                                      InsertionMode = InsertionMode.Replace,
                                                                                                                                      HttpMethod = "GET"}, new {@class = "nav-link"})
     </div>
@@ -42,4 +42,4 @@
     @Scripts.Render("~/bundles/jqueryval")
 }
 
-@Scripts.Render("~/bundles/bootstrap")
+@Scripts.Render("~/bundles/bootstrap") <!-- For dynamic page loading into CommentOutput div on Contact.cshtml-->

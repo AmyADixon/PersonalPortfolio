@@ -1,6 +1,6 @@
 ﻿@model IEnumerable<PersonalPortfolio.Models.VisitorComments>
 
-<div id="commentOutput">
+<div id="CommentOutput">
     <table class="table">
         <tr>
             <th>
@@ -30,7 +30,7 @@
     </table>
 
     <p>
-        @Ajax.ActionLink("Leave a Comment", "Create", "Home", null, new AjaxOptions {UpdateTargetId = "commentOutput",
+        @Ajax.ActionLink("Leave a Comment", "Create", "Home", null, new AjaxOptions {UpdateTargetId = "CommentOutput",
                                                                                                                                      InsertionMode = InsertionMode.Replace,
                                                                                                                                      HttpMethod = "POST"}, new {@class = "nav-link"})
     </p>
@@ -44,4 +44,4 @@
     </address>
 </div>
 
-@Scripts.Render("~/bundles/bootstrap")
+@Scripts.Render("~/bundles/bootstrap") <!-- For dynamic page loading into CommentOutput div above -->
