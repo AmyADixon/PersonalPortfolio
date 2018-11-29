@@ -50,7 +50,7 @@
                 </li>
             </ul>
         </div>
-        <audio controls loop muted id="audio">
+        <audio controls loop muted id="audio"> <!-- Muted audio is more welcome than not, as per policy changes-->
             <source src="https://actions.google.com/sounds/v1/water/waves_crashing_on_rock_beach.ogg" type="audio/ogg" />
             <source src="~/AudioFiles/waves.mp3" type="audio/mp3">
         </audio>
@@ -65,7 +65,7 @@
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
-    @Scripts.Render("~/Scripts/AutoPlay.js")
-    @RenderSection("scripts", required: false)
+    @Scripts.Render("~/Scripts/AutoPlay.js") <!-- Shpuld play only if user has played sound on site before-->
+    @RenderSection("scripts", required: false) <!-- as per standard autoplay policy changes -->
 </body>
 </html>
