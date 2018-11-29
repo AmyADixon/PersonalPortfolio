@@ -28,5 +28,10 @@ namespace PersonalPortfolio.Controllers {
             /* Pass them to a partial view to be displayed */
             return PartialView(allComments);
         }
+
+        [HttpPost]
+        public ActionResult Create() {
+            return PartialView();
+        }
     }
 }
