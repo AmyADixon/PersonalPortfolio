@@ -5,8 +5,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link runat ="server"rel ="shortcut icon" href="~/favicon.ico" type="image/x-icon">
+    <link runat="server" rel="shortcut icon" href="~/favicon.ico" type="image/x-icon">
     <link runat="server" rel="icon" href="~/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!-- To use free google material icons-->
 
     @Styles.Render("~/Content/css")
     @Styles.Render("~/CustomCSS/BootstrapOverride.css")
@@ -48,11 +49,17 @@
                 </li>
             </ul>
         </div>
-        <audio controls loop muted id="audio">
+        <audio loop id="audio"> <!-- Autoplay attribute doesn't work on all browsers, hence AutoPlay.js-->
             <!-- First src is for browsers that support it, second is for those that do not -->
             <source src="https://actions.google.com/sounds/v1/water/waves_crashing_on_rock_beach.ogg" type="audio/ogg" />
             <source src="~/AudioFiles/waves.mp3" type="audio/mp3">
         </audio>
+
+        <!-- Customizes the audio player with mor simplified buttons -->
+        <div>
+            <button class ="audioBtns" onclick="document.getElementById('audio').play()">  <i class="material-icons"> play_arrow </i> </button>
+            <button class ="audioBtns" onclick="document.getElementById('audio').pause()"> <i class="material-icons"> pause </i> </button>
+        </div>
     </nav>
     <div class="container body-content">
 

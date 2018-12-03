@@ -18,3 +18,8 @@
     left: 4em;
     overflow: auto;
 }
+
+.audioBtns {
+    border: none;
+    background: none;
+}
