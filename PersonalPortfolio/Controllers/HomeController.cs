@@ -51,14 +51,24 @@ namespace PersonalPortfolio.Controllers {
             return PartialView(allComments);
         }
 
+        public ActionResult Create() {
+            return PartialView();
+        }
+
         /// <summary>
         /// Produces a partial view capable of adding a 
         /// comment to the DB
         /// </summary>
         /// <returns></returns>
         [HttpPost]
-        public ActionResult Create() {
-            return PartialView();
+        public ActionResult Create(VisitorComments comment) {
+            if (ModelState.IsValid) {
+                CommentDBHelper.addComment(_db, comment);
+
+                RedirectToAction("Contact"); // Will most likely load a new page; will need ajax
+            }
+
+            return PartialView(comment);
         }
     }
 }
