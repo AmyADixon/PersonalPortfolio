@@ -9,9 +9,12 @@
 /* Using just to visualize the space */
 #Output {
     border-color: red;
-    border-style:solid;
+    border-style: solid;
+    max-height: 80vh;
     border-width: .3em;
-    width: 45em;
-    position:fixed;
+    padding: 1em;
+    max-width: 120vh;
+    position: fixed;
     left: 4em;
+    overflow: auto;
 }
