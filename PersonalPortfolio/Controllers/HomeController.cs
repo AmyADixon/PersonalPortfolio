@@ -62,11 +62,12 @@ namespace PersonalPortfolio.Controllers {
         /// <returns></returns>
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(VisitorComments vComment) {
+        public PartialViewResult Create(VisitorComments vComment) {
             if (ModelState.IsValid) {
                 CommentDBHelper.addComment(_db, vComment);
 
-                return RedirectToAction("Contact"); // Will most likely load a new page; will need ajax
+                //return RedirectToAction("Contact"); 
+                return PartialView("Contact", CommentDBHelper.getAllComments(_db));
             }
 
             return PartialView(vComment);
